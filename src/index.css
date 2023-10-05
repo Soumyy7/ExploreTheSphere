@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --primary: #f8efbc;
+  --secondary: #f3dc8c;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Poppins";
+  background: var(--secondary);
+  background-image: radial-gradient(
+    #f3dc8c,
+    #f3dc8c,
+    #f3dc8c,
+    #f3dc8c,
+    tan,
+    teal
+  );
+}
+
+* {
+  color: #052f4a;
+  margin: 0;
+}
+p {
+  margin: 20px 0;
+  color: black;
+}
+button {
+  border: 0;
+  padding: 8px;
+  border-radius: 4px;
+  color: brown;
+  background: var(--primary);
+  cursor: pointer;
+}
+
+/* navbar */
+header nav {
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header nav h1 {
+  margin-right: auto;
+  color: #052f4a;
+  font-size: 2em;
+  border-bottom: 3px solid #052f4a;
+}
+
+header nav a {
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+header nav a.active {
+  color: #052f4a;
+  font-size: 1.1em;
+  border: 2px solid #052f4a;
+}
+
+/* page content */
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* help layout */
+.help-layout nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+.help-layout nav a {
+  padding: 10px;
+  border-radius: 4px;
+  border: 2px solid #ecd9ed;
+  background-color: #f8efbc;
+  text-decoration: none;
+}
+.help-layout nav a:hover {
+  border-color: #052f4a;
+  background-color: #f3dc8c;
+}
+.help-layout nav a.active {
+  border-color: #052f4a;
+  background: #f3dc8c;
+}
+
+/* faq */
+.faq .question {
+  background: #f8efbc;
+  padding: 5px 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+/* contact form */
+form {
+  margin-top: 30px;
+}
+form input,
+form label span,
+form textarea {
+  display: block;
+}
+form input,
+form textarea {
+  margin-bottom: 30px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 0;
+  width: 300px;
+  color: var(--secondary);
+}
+form label span {
+  margin-bottom: 10px;
+}
+/* careers list */
+.careers > a {
+  display: block;
+  background: #f8efbc;
+  padding: 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+  text-decoration: none;
+}
+.careers > a:hover p {
+  color: #e7c63d;
+}
+.careers p {
+  margin: 0;
+}
+.careers > a p:last-child {
+  font-size: 0.8em;
+  color: #052f4a;
+}
+
+/* careers details */
+.career-details {
+  background: #f8efbc;
+  padding: 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+/* breadcrumbs */
+.breadcrumbs {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.breadcrumbs > * {
+  display: inline-block;
+  margin-right: 10px;
+}
+.breadcrumbs .crumb:after {
+  content: ">";
+  margin-left: 10px;
+}
+.breadcrumbs .crumb:last-child:after {
+  display: none;
+}
+.breadcrumbs .crumb a {
+  color: black;
+}
